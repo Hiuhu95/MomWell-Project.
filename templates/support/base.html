@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mom Well{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        <!-- Default content if not overridden -->
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2024 Mom Well Service. All rights reserved.</p>
+        <p>Follow us:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>Contact us at: <a href="mailto:info@momwell.com">info@momwell.com</a></p>
+    </footer>
+</body>
+</html>
